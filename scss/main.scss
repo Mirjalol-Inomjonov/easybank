@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
+    padding: 15px 0;
 
     .burger {
         display: none;
@@ -23,6 +23,19 @@
             letter-spacing: -0.107692px;
             color: #9597A5;
             text-decoration: none;
+            &::after {
+                content: '';
+                width: 0;
+                height: 2px;
+                background: linear-gradient(to right, #30c88f 8%, #2bb9cc 100%);
+                display: block;
+                margin: auto;
+                transform: translate(0, 30px);
+                transition: 0.25s;
+            }
+            &:hover::after {
+                width: 100%;
+            }
         }
     }
 }

@@ -24,7 +24,7 @@ ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0;
+  padding: 15px 0;
 }
 .header .burger {
   display: none;
@@ -41,6 +41,19 @@ ul li {
   letter-spacing: -0.107692px;
   color: #9597A5;
   text-decoration: none;
+}
+.header .nav-list__item a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #30c88f 8%, #2bb9cc 100%);
+  display: block;
+  margin: auto;
+  transform: translate(0, 30px);
+  transition: 0.25s;
+}
+.header .nav-list__item a:hover::after {
+  width: 100%;
 }
 
 .main-section {
