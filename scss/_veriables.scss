@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-btn {
+    color: #fff;
+    padding: 8px 36px;
+    border-radius: 22px;
+    text-decoration: none;
+    background: linear-gradient(to right, #30c88f 8%, #2bb9cc 100%);
+}
+
